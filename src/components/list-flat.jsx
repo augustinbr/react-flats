@@ -4,7 +4,7 @@ import Flat from './flat';
 const ListFlats = (props) => {
   return (
     <div className="card">
-      {props.listFlats.map(flat => <Flat price={flat.price} key={flat.price} name={flat.name} />)}
+      {props.listFlats.map(flat => <Flat price={flat.price} key={flat.price} name={flat.name} imageUrl={flat.imageUrl} />)}
     </div>
   );
 };

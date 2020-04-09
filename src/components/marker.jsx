@@ -1,12 +1,14 @@
 import React from 'react';
 import './Marker.css';
 
-const Marker = (props: any) => {
+const Marker = (prop) => {
   return (
-      <div className="marker"
-        style={{ cursor: 'pointer'}}
-      />
+      <div className="marker">
+        {props}
+      </div>
   );
 };
 
 export default Marker;
+
+const AnyReactComponent = ({ text }) => <div className="marker">{text}</div>;
